@@ -25,6 +25,14 @@ public class UserContainer {
         users.add(user1);
         fbUsers.put(user1.getId(), user1);
 
+        User user2 = buildUser2();
+        users.add(user2);
+        fbUsers.put(user2.getId(), user2);
+
+        User user3 = buildUser3();
+        users.add(user3);
+        fbUsers.put(user3.getId(), user3);
+
     }
 
     public User getUser(){
@@ -35,8 +43,24 @@ public class UserContainer {
     protected User buildUser1() {
         User user = new User();
         user.setId(1);
-        user.setEmail("sarkozigyorgyne57@gmail.com");
-        user.setPassword("Gyerekek01");
+        user.setEmail("budaizsolt836@gmail.com");
+        user.setPassword("carhunter99");
+        return user;
+    }
+
+    protected User buildUser2() {
+        User user = new User();
+        user.setId(2);
+        user.setEmail("nagyfrigyes37@gmail.com");
+        user.setPassword("carhunter99");
+        return user;
+    }
+
+    protected User buildUser3() {
+        User user = new User();
+        user.setId(2);
+        user.setEmail("budai9726@gmail.com");
+        user.setPassword("carhunter99");
         return user;
     }
 
